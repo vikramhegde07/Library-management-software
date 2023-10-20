@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/dataBase">
+        <file>db/LibraryManagement.db</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>borrowNew</class>
+ <widget class="QMainWindow" name="borrowNew">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Issue Books</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="1" column="0" colspan="2">
+         <widget class="QLabel" name="label_2">
+          <property name="styleSheet">
+           <string notr="true">font-size:15px;</string>
+          </property>
+          <property name="text">
+           <string>Book Title</string>
+          </property>
+          <property name="buddy">
+           <cstring>BookTitle</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <widget class="QLabel" name="label_3">
+          <property name="styleSheet">
+           <string notr="true">font-size:15px;</string>
+          </property>
+          <property name="text">
+           <string>Student Register ID</string>
+          </property>
+          <property name="buddy">
+           <cstring>StudentId</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0" colspan="2">
+         <widget class="QLabel" name="label_5">
+          <property name="styleSheet">
+           <string notr="true">font-size:15px;</string>
+          </property>
+          <property name="text">
+           <string>Issue Date</string>
+          </property>
+          <property name="buddy">
+           <cstring>BorrowDate</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">font-size:15px;</string>
+          </property>
+          <property name="text">
+           <string>Book ID</string>
+          </property>
+          <property name="buddy">
+           <cstring>BookId</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2" colspan="3">
+         <widget class="QDateEdit" name="ReturnDate">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">outline:none;
+padding:7px 15px;
+font-size:15px;</string>
+          </property>
+          <property name="wrapping">
+           <bool>false</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="dateTime">
+           <datetime>
+            <hour>0</hour>
+            <minute>0</minute>
+            <second>0</second>
+            <year>2022</year>
+            <month>9</month>
+            <day>1</day>
+           </datetime>
+          </property>
+          <property name="currentSection">
+           <enum>QDateTimeEdit::YearSection</enum>
+          </property>
+          <property name="displayFormat">
+           <string>yyyy/M/d</string>
+          </property>
+          <property name="calendarPopup">
+           <bool>true</bool>
+          </property>
+          <property name="date">
+           <date>
+            <year>2022</year>
+            <month>9</month>
+            <day>1</day>
+           </date>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="2">
+         <widget class="QLabel" name="label_6">
+          <property name="styleSheet">
+           <string notr="true">font-size:15px;</string>
+          </property>
+          <property name="text">
+           <string>Due Date</string>
+          </property>
+          <property name="buddy">
+           <cstring>ReturnDate</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2" colspan="4">
+         <widget class="QLineEdit" name="BookId">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">outline:none;
+border:0.5px solid #333;
+padding:7px 15px;
+font-size:15px;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2" colspan="4">
+         <widget class="QLineEdit" name="BookTitle">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">outline:none;
+border:0.5px solid #333;
+padding:7px 15px;
+font-size:15px;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2" colspan="3">
+         <widget class="QDateEdit" name="BorrowDate">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>-1</pointsize>
+            <stylestrategy>PreferDefault</stylestrategy>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">outline:none;
+padding:7px 15px;
+font-size:15px;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="accelerated">
+           <bool>false</bool>
+          </property>
+          <property name="showGroupSeparator" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="dateTime">
+           <datetime>
+            <hour>0</hour>
+            <minute>0</minute>
+            <second>0</second>
+            <year>2022</year>
+            <month>11</month>
+            <day>10</day>
+           </datetime>
+          </property>
+          <property name="displayFormat">
+           <string>yyyy/M/d</string>
+          </property>
+          <property name="calendarPopup">
+           <bool>true</bool>
+          </property>
+          <property name="date">
+           <date>
+            <year>2022</year>
+            <month>11</month>
+            <day>10</day>
+           </date>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <widget class="QLabel" name="label_4">
+          <property name="styleSheet">
+           <string notr="true">font-size:15px;</string>
+          </property>
+          <property name="text">
+           <string>Student Name</string>
+          </property>
+          <property name="buddy">
+           <cstring>StudentName</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2" colspan="4">
+         <widget class="QLineEdit" name="StudentId">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">outline:none;
+border:0.5px solid #333;
+padding:7px 15px;
+font-size:15px;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2" colspan="4">
+         <widget class="QLineEdit" name="StudentName">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">outline:none;
+border:0.5px solid #333;
+padding:7px 15px;
+font-size:15px;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="6">
+         <widget class="QPushButton" name="StudentIdSearch">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">padding:0 10px;
+font-size:15px;</string>
+          </property>
+          <property name="text">
+           <string>Search</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="6">
+         <widget class="QPushButton" name="bookIdSearch">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">padding:0 10px;
+font-size:15px;</string>
+          </property>
+          <property name="text">
+           <string>Search</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <property name="spacing">
+         <number>15</number>
+        </property>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Exit">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">padding:0 10px;
+font-size:15px;</string>
+          </property>
+          <property name="text">
+           <string>Exit</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="AddToRecord">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">padding:0 10px;
+font-size:15px;</string>
+          </property>
+          <property name="text">
+           <string>Add To Record</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>BookId</tabstop>
+  <tabstop>bookIdSearch</tabstop>
+  <tabstop>BookTitle</tabstop>
+  <tabstop>StudentId</tabstop>
+  <tabstop>StudentIdSearch</tabstop>
+  <tabstop>StudentName</tabstop>
+  <tabstop>BorrowDate</tabstop>
+  <tabstop>ReturnDate</tabstop>
+  <tabstop>AddToRecord</tabstop>
+  <tabstop>Exit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
