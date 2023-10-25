@@ -8,9 +8,9 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-//    L.setModal(true);
-//    L.exec();
-//    checkLogin();
+    L.setModal(true);
+    L.exec();
+    checkLogin();
     display_info();
 }
 
@@ -111,13 +111,13 @@ void MainWindow::on_backup_Btn_clicked()
     fstream read , write , log;
     string line;
 
-    string backupfile = "C:/Users/Vikra/Dropbox/PC/Desktop/Library Database/Backups/backup -";
+    string backupfile = "C:/Users/vikra/Desktop/Library Database/Backups/backup -";
     backupfile.append(QDate::currentDate().toString().toStdString());
     backupfile.append(".db");
 
-    read.open("C:/Users/Vikra/Dropbox/PC/Desktop/Library Database/LibraryManagement.db", ios::in | ios::binary);
+    read.open("C:/Users/vikra/Desktop/Library Database/LibraryManagement.db", ios::in | ios::binary);
     write.open(backupfile, ios::app | ios::binary);
-    log.open("C:/Users/vikra/Dropbox/PC/Desktop/Library Database/backup_log.txt",ios::app);
+    log.open("C:/Users/vikra/Desktop/Library Database/backup_log.txt",ios::app);
 
     if(read){
         while (getline(read, line)) {
@@ -140,15 +140,15 @@ void MainWindow::on_restore_Btn_clicked()
     fstream read , write , log;
     string line;
 
-    log.open("C:/Users/Vikra/Dropbox/PC/Desktop/Library Database/backup_log.txt",ios::in);
+    log.open("C:/Users/vikra/Desktop/Library Database/backup_log.txt",ios::in);
     while(getline(log,line)){}
 
-    string backupfile = "C:/Users/Vikra/Dropbox/PC/Desktop/Library Database/Backups/backup -";
+    string backupfile = "C:/Users/vikra/Desktop/Library Database/Backups/backup -";
     backupfile.append(line);
     backupfile.append(".db");
 
     read.open(backupfile, ios::in | ios::binary);
-    write.open("C:/Users/Vikra/Dropbox/PC/Desktop/Library Database/LibraryManagement2.db", ios::app | ios::binary);
+    write.open("C:/Users/Vikra/Desktop/Library Database/LibraryManagement2.db", ios::app | ios::binary);
 
     if(read){
         while (getline(read, line)) {
