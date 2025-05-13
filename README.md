@@ -1,2 +1,2 @@
- something <pre><code> /n </code></pre>
+ something <pre><code></code></pre>
  else
