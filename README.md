@@ -1,2 +1,3 @@
- something <pre><code></code></pre>
+ something 
+ 
  else
